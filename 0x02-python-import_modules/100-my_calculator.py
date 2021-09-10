@@ -3,17 +3,14 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, mul, div
     from sys import argv
 
-    argumentCount = len(argv)
-    a = argv[1]
-    operator = argv[2]
-    b = argv[3]
+    argumentCount = len(argv)    
     if (argumentCount < 3):
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     else:
-        a =	int(argv[1])
+        a = int(argv[1])
         operator = argv[2]
-        b =	int(argv[3])
+        b = int(argv[3])
 
         if (operator == '+'):
             print("{:d} {:s} {:d} = {:d}".format(a, operator, b, add(a, b)))
