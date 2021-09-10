@@ -4,7 +4,7 @@ if __name__ == "__main__":
     from sys import argv
 
     argumentCount = len(argv)    
-    if (argumentCount != 3):
+    if (argumentCount < 3 or argumentCount > 3):
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     else:
