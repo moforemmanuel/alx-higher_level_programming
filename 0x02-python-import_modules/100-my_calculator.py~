@@ -1,6 +1,0 @@
-#!/usr/bin/python3
-if __name__ == "__main__":
-#    from calculator_1 import *
-    from sys import argv
-
-    print(list(argv[1:]))
