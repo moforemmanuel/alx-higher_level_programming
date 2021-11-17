@@ -1,2 +1,2 @@
---list databases
-mysql SHOW DATABASES;
+-- list databases
+SHOW DATABASES;
