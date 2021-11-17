@@ -1,2 +1,2 @@
 -- display table info
-SHOW COLUMNS FROM hbtn_0c_0
+SHOW COLUMNS FROM first_table
