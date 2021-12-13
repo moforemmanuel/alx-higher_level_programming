@@ -1,7 +1,6 @@
 #!/usr/bin/node
 
-import { argv } from 'process';
-const args = argv.length;
+const args = process.argv.length;
 
 if (args == 2)
 {
