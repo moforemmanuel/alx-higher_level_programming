@@ -1,9 +1,10 @@
 #!/usr/bin/node
 
-const array = process.argv.slice(2);
-if (array.length === 0 || array.length === 1) {
+const arr = process.argv.slice(2);
+if (arr.length === 0 || arr.length === 1) {
   console.log(0);
 } else {
+  const array = arr.map(e => parseInt(e));
   const max = Math.max(...array);
   const index = array.indexOf(max);
   array.splice(index, 1);
