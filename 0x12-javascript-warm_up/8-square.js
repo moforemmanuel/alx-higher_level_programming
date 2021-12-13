@@ -7,7 +7,7 @@ if (isNaN(x)) {
   console.log('Mising size');
 } else {
   for (let i = 0; i < x; i++) {
-      let star = '';
+    let star = '';
     for (let j = 0; j < x; j++) {
       star += 'X';
     }
