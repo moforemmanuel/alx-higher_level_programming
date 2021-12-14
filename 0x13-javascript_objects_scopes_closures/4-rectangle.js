@@ -8,12 +8,13 @@ module.exports = class Rectangle {
   }
 
   print () {
+    this.char = 'X';
     for (let i = 0; i < this.height; i++) {
       let star = '';
       for (let j = 0; j < this.width; j++) {
-        star += 'X';
+        star += this.char;
       }
-      //or console.log('X'.repeat(this.width))
+      //or console.log(char.repeat(this.width))
       console.log(star);
     }
   }
