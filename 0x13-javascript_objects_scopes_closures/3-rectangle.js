@@ -6,10 +6,11 @@ module.exports = class Rectangle {
     this.width = w;
     this.height = h;
   }
+
   print () {
-    for (let i = 0; i < h; i++) {
+    for (let i = 0; i < this.height; i++) {
       let star = '';
-      for (let j = 0; j < w; j++) {
+      for (let j = 0; j < this.width; j++) {
         star += 'X';
       }
       console.log(star);
