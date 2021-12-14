@@ -2,7 +2,7 @@
 
 const Rectangle = require('./4-rectangle');
 
-module.export = class Square extends Rectangle {
+module.exports = class Square extends Rectangle {
   constructor (size) {
     super(size, size);
   }
