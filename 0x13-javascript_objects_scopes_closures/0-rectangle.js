@@ -3,7 +3,6 @@
 module.exports = {
   Rectangle: class {
     constructor () {
-      
     }
   }
 };
