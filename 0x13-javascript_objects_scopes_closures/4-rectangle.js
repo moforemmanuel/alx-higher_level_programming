@@ -13,6 +13,7 @@ module.exports = class Rectangle {
       for (let j = 0; j < this.width; j++) {
         star += 'X';
       }
+      //or console.log('X'.repeat(this.width))
       console.log(star);
     }
   }
