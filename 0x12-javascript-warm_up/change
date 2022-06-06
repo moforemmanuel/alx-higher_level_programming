@@ -1,2 +1,0 @@
-sudo chmod u+x $1
-echo "Now executable"
