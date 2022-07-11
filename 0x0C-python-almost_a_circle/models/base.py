@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """models"""
+# pylint: disable=invalid-name
 
 
 class Base:
