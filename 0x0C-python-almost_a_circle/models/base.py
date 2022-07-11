@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """models"""
-# pylint: disable=invalid-name
+# pylint: disable=invalid-name, redefined-builtin, too-few-public-methods
 
 
 class Base:
