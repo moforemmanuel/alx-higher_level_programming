@@ -3,7 +3,7 @@
 
 # pylint: disable=invalid-name, redefined-builtin, too-many-arguments, unused-argument
 
-from .base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -22,8 +22,8 @@ class Rectangle(Base):
         """getter for width"""
         return self.__width
 
-    @property.setter
-    def set_width(self, width):
+    @width.setter
+    def width(self, width):
         """setter for width"""
         self.__width = width
 
