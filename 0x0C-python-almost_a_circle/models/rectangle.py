@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 """First Rectangle"""
 
-# pylint: disable=invalid-name, redefined-builtin, too-many-arguments, unused-argument,\
-# relative-beyond-top-level
+# pylint: disable=invalid-name, redefined-builtin, too-many-arguments, unused-argument
+# pylint: disable=relative-beyond-top-level
 
 from .base import Base
 
@@ -26,7 +26,12 @@ class Rectangle(Base):
     @width.setter
     def width(self, width):
         """setter for width"""
-        self.__width = width
+        if not isinstance(width, int):
+            print("width must be an integer")
+        elif width <= 0:
+            print("width must be > 0")
+        else:
+            self.__width = width
 
     @property
     def height(self):
@@ -36,7 +41,12 @@ class Rectangle(Base):
     @height.setter
     def height(self, height):
         """setter for height"""
-        self.__height = height
+        if not isinstance(height, int):
+            print("height must be an integer")
+        elif height <= 0:
+            print("height must be > 0")
+        else:
+            self.__height = height
 
     @property
     def x(self):
@@ -46,7 +56,12 @@ class Rectangle(Base):
     @x.setter
     def x(self, x):
         """setter for x"""
-        self.__x = x
+        if not isinstance(x, int):
+            print("x must be an integer")
+        elif x < 0:
+            print("x must be >= 0")
+        else:
+            self.__x = x
 
     @property
     def y(self):
@@ -56,4 +71,9 @@ class Rectangle(Base):
     @y.setter
     def y(self, y):
         """setter for y"""
-        self.__y = y
+        if not isinstance(y, int):
+            print("y must be an integer")
+        elif y < 0:
+            print("y must be >= 0")
+        else:
+            self.__y = y
