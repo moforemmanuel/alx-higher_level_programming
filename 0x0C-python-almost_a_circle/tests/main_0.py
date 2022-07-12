@@ -12,3 +12,7 @@ class BaseTest(unittest.TestCase):
     def test_id(self):
         """test case"""
         self.assertNotEqual(base.id, None)
+
+
+if __name__ == "__main__":
+    unittest.main()
