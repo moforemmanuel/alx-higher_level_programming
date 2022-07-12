@@ -2,7 +2,7 @@
 """First Rectangle"""
 
 # pylint: disable=invalid-name, redefined-builtin, too-many-arguments, unused-argument
-from .base import Base
+from base import Base
 
 
 class Rectangle(Base):
