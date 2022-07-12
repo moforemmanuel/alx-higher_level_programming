@@ -17,10 +17,12 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-    def get_width(self):
+    @property
+    def width(self):
         """getter for width"""
         return self.__width
 
+    @property.setter
     def set_width(self, width):
         """setter for width"""
         self.__width = width
