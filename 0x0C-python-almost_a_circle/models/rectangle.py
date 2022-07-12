@@ -2,6 +2,7 @@
 """First Rectangle"""
 
 # pylint: disable=invalid-name, redefined-builtin, too-many-arguments, unused-argument
+
 from base import Base
 
 
@@ -47,3 +48,8 @@ class Rectangle(Base):
     def set_y(self, y):
         """setter for y"""
         self.__y = y
+
+
+if __name__ == "__main__":
+    r = Rectangle(2, 3)
+    print(r.id)
