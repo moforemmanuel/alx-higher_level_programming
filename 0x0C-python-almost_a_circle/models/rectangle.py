@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """First Rectangle"""
 
-# pylint: disable=invalid-name, redefined-builtin, too-many-arguments, unused-argument, relative-beyond-top-level
+# pylint: disable=invalid-name, redefined-builtin, too-many-arguments, unused-argument,\
+# relative-beyond-top-level
 
 from .base import Base
 
