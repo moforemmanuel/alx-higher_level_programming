@@ -99,6 +99,7 @@ class Rectangle(Base):
         return f'[{self.__class__.__name__}] ({self.id})' \
                f' {self.__x}/{self.__y} - {self.__width}/{self.__height}'
 
+
 if __name__ == "__main__":
     r = Rectangle(4, 2)
     print(r.area())
