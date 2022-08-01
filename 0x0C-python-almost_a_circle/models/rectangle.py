@@ -5,7 +5,7 @@
 # pylint: disable=relative-beyond-top-level
 # pylint: disable=too-many-instance-attributes
 
-from .base import Base
+from base import Base
 
 
 class Rectangle(Base):
@@ -78,3 +78,8 @@ class Rectangle(Base):
     def area(self):
         """area"""
         return self.height * self.width
+
+
+if __name__ == "__main__":
+    r = Rectangle(4, 2)
+    print(r.area())
