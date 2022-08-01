@@ -89,7 +89,7 @@ class Rectangle(Base):
         s1 = ' ' * self.x
         s2 = '#' * self.width
         s = s1 + s2
-        ts = '\n' * self.y
+        ts = '\n' * (self.y - 1)
         i = self.height
 
         print(ts)
