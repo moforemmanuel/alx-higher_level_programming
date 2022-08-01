@@ -7,6 +7,8 @@
 # pylint: disable=relative-beyond-top-level
 # pylint: disable=too-many-instance-attributes
 # pylint: disable=unbalanced-tuple-unpacking
+# pylint: disable=attribute-defined-outside-init
+# pylint: disable=access-member-before-definition
 
 
 from .base import Base
@@ -107,14 +109,14 @@ class Rectangle(Base):
         return f'[{self.__class__.__name__}] ({self.id})' \
                f' {self.__x}/{self.__y} - {self.__width}/{self.__height}'
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
 
         Args:
-            *args: member properties
+            *args: integers to update args
+            **kwargs: named args to update instance
 
         Returns:
-            updated instance
 
         """
         values = (self.id, self.width, self.height, self.x, self.y)
@@ -122,8 +124,12 @@ class Rectangle(Base):
             self.id, self.width, self.height, self.x, self.y =\
                 args + values[len(args):]
 
+        elif kwargs:
+            for (name, value) in kwargs.items():
+                setattr(self, name, value)
+
 
 if __name__ == "__main__":
     r = Rectangle(4, 2, 2, 2)
-    r.update(10)
+    r.update(id=20)
     print(r)
