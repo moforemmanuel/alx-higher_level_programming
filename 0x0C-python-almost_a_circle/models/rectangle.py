@@ -92,7 +92,9 @@ class Rectangle(Base):
             i -= 1
 
     def __str__(self):
-        """Str repr"""
+        """
+        Str repr
+        """
         return f'[{self.__class__.__name__}] ({self.id})' \
                f' {self.__x}/{self.__y} - {self.__width}/{self.__height}'
 
