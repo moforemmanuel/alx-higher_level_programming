@@ -8,6 +8,7 @@
 # pylint: disable=too-many-instance-attributes
 # pylint: disable=unbalanced-tuple-unpacking
 
+
 from .base import Base
 
 
@@ -117,12 +118,11 @@ class Rectangle(Base):
 
         """
         values = (self.id, self.width, self.height, self.x, self.y)
-        if not args:
-            (self.id, self.width, self.height, self.x, self.y) = args + values[len(args):]
+        if args:
+            self.id, self.width, self.height, self.x, self.y = args + values[len(args):]
 
 
 if __name__ == "__main__":
     r = Rectangle(4, 2, 2, 2)
-    r.update(100)
-    r.update(4, 4, 4, 4, 4)
+    r.update(10)
     print(r)
