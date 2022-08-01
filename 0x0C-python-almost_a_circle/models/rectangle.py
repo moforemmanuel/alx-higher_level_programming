@@ -3,6 +3,7 @@
 
 # pylint: disable=invalid-name, redefined-builtin, too-many-arguments, unused-argument
 # pylint: disable=relative-beyond-top-level
+# pylint: disable=too-many-instance-attributes
 
 from .base import Base
 
@@ -13,10 +14,10 @@ class Rectangle(Base):
     def __init__(self, width, height, x=0, y=0, id=None):
         """constructor"""
         super().__init__(id)
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
 
     @property
     def width(self):
