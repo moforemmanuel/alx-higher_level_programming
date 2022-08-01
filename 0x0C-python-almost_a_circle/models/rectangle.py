@@ -104,7 +104,14 @@ class Rectangle(Base):
         return f'[{self.__class__.__name__}] ({self.id})' \
                f' {self.__x}/{self.__y} - {self.__width}/{self.__height}'
 
+    def update(self, *args):
+        values = (self.id, self.width, self.height, self.x, self.y)
+        if not args == ():
+            (self.id, self.width, self.height, self.x, self.y) = args + values[len(args):]
+
 
 if __name__ == "__main__":
     r = Rectangle(4, 2, 2, 2)
-    r.display()
+    r.update(100)
+    r.update(4, 4, 4, 4, 4)
+    print(r)
