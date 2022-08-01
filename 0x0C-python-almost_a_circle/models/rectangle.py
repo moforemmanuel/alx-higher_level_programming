@@ -119,7 +119,8 @@ class Rectangle(Base):
         """
         values = (self.id, self.width, self.height, self.x, self.y)
         if args:
-            self.id, self.width, self.height, self.x, self.y = args + values[len(args):]
+            self.id, self.width, self.height, self.x, self.y =\
+                args + values[len(args):]
 
 
 if __name__ == "__main__":
