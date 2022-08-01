@@ -86,8 +86,13 @@ class Rectangle(Base):
         """
         display instance graphically
         """
-        s = '#' * self.width
+        s1 = ' ' * self.x
+        s2 = '#' * self.width
+        s = s1 + s2
+        ts = '\n' * self.y
         i = self.height
+
+        print(ts)
         while i > 0:
             print(s)
             i -= 1
@@ -101,7 +106,5 @@ class Rectangle(Base):
 
 
 if __name__ == "__main__":
-    r = Rectangle(4, 2)
-    print(r.area())
+    r = Rectangle(4, 2, 2, 2)
     r.display()
-    print(r)
