@@ -78,8 +78,3 @@ class Rectangle(Base):
     def area(self):
         """area"""
         return self.height*self.width
-
-
-if __name__ == '__main__':
-    r = Rectangle(1, 2)
-    print(r.area())
