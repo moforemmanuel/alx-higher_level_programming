@@ -82,7 +82,9 @@ class Rectangle(Base):
         return self.height * self.width
 
     def display(self):
-        """display instance graphically"""
+        """
+        display instance graphically
+        """
         s = '#' * self.width
         i = self.height
         while i > 0:
