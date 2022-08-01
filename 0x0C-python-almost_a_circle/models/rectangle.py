@@ -19,6 +19,18 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    def area(self):
+        """area"""
+        return self.height * self.width
+
+    def display(self):
+        """display instance graphically"""
+        s = '#' * self.width
+        i = self.height
+        while i > 0:
+            print(s)
+            i -= 1
+
     @property
     def width(self):
         """getter for width"""
@@ -74,19 +86,6 @@ class Rectangle(Base):
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
-
-    @staticmethod
-    def area(self):
-        """area"""
-        return self.height * self.width
-
-    def display(self):
-        """display instance graphically"""
-        s = '#' * self.width
-        i = self.height
-        while i > 0:
-            print(s)
-            i -= 1
 
 
 if __name__ == "__main__":
