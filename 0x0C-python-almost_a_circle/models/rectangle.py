@@ -5,6 +5,7 @@
 # pylint: disable=invalid-name, redefined-builtin
 # pylint: disable=relative-beyond-top-level
 # pylint: disable=too-many-instance-attributes
+# pylint: disable=unbalanced-tuple-unpacking
 
 from .base import Base
 
@@ -105,8 +106,17 @@ class Rectangle(Base):
                f' {self.__x}/{self.__y} - {self.__width}/{self.__height}'
 
     def update(self, *args):
+        """
+
+        Args:
+            *args: member properties
+
+        Returns:
+            updated instance
+
+        """
         values = (self.id, self.width, self.height, self.x, self.y)
-        if not args == ():
+        if not args:
             (self.id, self.width, self.height, self.x, self.y) = args + values[len(args):]
 
 
