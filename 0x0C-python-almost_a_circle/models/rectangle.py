@@ -11,7 +11,7 @@
 # pylint: disable=access-member-before-definition
 
 
-from base import Base
+from .base import Base
 
 
 class Rectangle(Base):

@@ -5,7 +5,7 @@ This module implements a square object
 
 # pylint: disable=redefined-builtin
 
-from rectangle import Rectangle
+from .rectangle import Rectangle
 
 
 class Square(Rectangle):
