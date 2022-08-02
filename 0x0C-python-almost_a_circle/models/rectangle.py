@@ -28,7 +28,7 @@ class Rectangle(Base):
     @property
     def size(self):
         """getter for size"""
-        return self.__size
+        return self.size
 
     @size.setter
     def size(self, width):
