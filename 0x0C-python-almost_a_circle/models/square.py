@@ -44,7 +44,7 @@ class Square(Rectangle):
 
 
 if __name__ == '__main__':
-    s = Square(2, 2, 2, 2)
-    s.update(id=4302)
-    s.update(size=-1)
+    s = Square(2)
+    # s.update(id=4302)
+    # s.update(size=-1)
     print(s)
