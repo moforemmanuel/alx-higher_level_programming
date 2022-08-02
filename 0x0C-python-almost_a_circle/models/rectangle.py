@@ -26,12 +26,12 @@ class Rectangle(Base):
         self.y = y
 
     @property
-    def width(self):
+    def size(self):
         """getter for size"""
         return self.__size
 
-    @width.setter
-    def width(self, width):
+    @size.setter
+    def size(self, width):
         """setter for width"""
         if not isinstance(width, int):
             raise TypeError("width must be an integer")
