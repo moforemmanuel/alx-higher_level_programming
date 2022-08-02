@@ -40,7 +40,7 @@ class Square(Rectangle):
         Returns: instance repr
         """
         return f'[{self.__class__.__name__}] ({self.id})' \
-               f' {self.__x}/{self.__y} - {self.__size}'
+               f' {self.x}/{self.y} - {self.__size}'
 
 
 if __name__ == '__main__':
