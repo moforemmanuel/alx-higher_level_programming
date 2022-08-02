@@ -5,7 +5,7 @@ This module implements a square object
 
 # pylint: disable=redefined-builtin
 
-from .rectangle import Rectangle
+from rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -23,7 +23,7 @@ class Square(Rectangle):
         Returns: sizeof instance side
 
         """
-        return self.size
+        return self.__size
 
     @size.setter
     def size(self, size):
@@ -31,8 +31,8 @@ class Square(Rectangle):
             raise TypeError("width must be an integer")
         if size <= 0:
             raise ValueError("width must be > 0")
-        self.size = size
-        self.height = self.width = size
+        self.__size = size
+        self.__height = self.__width = size
 
     def __str__(self):
         """
@@ -40,7 +40,7 @@ class Square(Rectangle):
         Returns: instance repr
         """
         return f'[{self.__class__.__name__}] ({self.id})' \
-               f' {self.x}/{self.y} - {self.size}'
+               f' {self.x}/{self.y} - {self.__size}'
 
 
 if __name__ == '__main__':
