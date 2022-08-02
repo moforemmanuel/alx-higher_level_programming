@@ -23,7 +23,7 @@ class Square(Rectangle):
         Returns: sizeof instance side
 
         """
-        return self.__size
+        return self.size
 
     @size.setter
     def size(self, size):
@@ -31,7 +31,7 @@ class Square(Rectangle):
             raise TypeError("size must be an integer")
         if size <= 0:
             raise ValueError("size must be > 0")
-        self.__size = size
+        self.size = size
         self.height = self.width = size
 
     def __str__(self):
@@ -40,7 +40,7 @@ class Square(Rectangle):
         Returns: instance repr
         """
         return f'[{self.__class__.__name__}] ({self.id})' \
-               f' {self.x}/{self.y} - {self.__size}'
+               f' {self.x}/{self.y} - {self.size}'
 
 
 if __name__ == '__main__':
