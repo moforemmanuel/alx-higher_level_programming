@@ -34,6 +34,14 @@ class Square(Rectangle):
         self.size = size
         self.height = self.width = size
 
+    def __str__(self):
+        """
+        overloading string repr
+        Returns: instance repr
+        """
+        return f'[{self.__class__.__name__}] ({self.id})' \
+               f' {self.__x}/{self.__y} - {self.__size}'
+
 
 if __name__ == '__main__':
     s = Square(2, 2, 2, 2)
