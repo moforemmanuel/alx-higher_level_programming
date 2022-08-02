@@ -32,7 +32,7 @@ class Square(Rectangle):
         if size <= 0:
             raise ValueError("width must be > 0")
         self.__size = size
-        self.height = self.width = size
+        self.width = self.height = size
 
     def __str__(self):
         """
