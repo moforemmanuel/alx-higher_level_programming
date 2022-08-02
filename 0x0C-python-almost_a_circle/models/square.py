@@ -28,10 +28,10 @@ class Square(Rectangle):
     @size.setter
     def size(self, size):
         if not isinstance(size, int):
-            raise TypeError("height must be an integer")
+            raise TypeError("size must be an integer")
         if size <= 0:
-            raise ValueError("height must be > 0")
-        self.size = size
+            raise ValueError("size must be > 0")
+        self.__size = size
         self.height = self.width = size
 
     def __str__(self):
@@ -46,4 +46,5 @@ class Square(Rectangle):
 if __name__ == '__main__':
     s = Square(2, 2, 2, 2)
     s.update(id=4302)
+    s.update(size=-1)
     print(s)
