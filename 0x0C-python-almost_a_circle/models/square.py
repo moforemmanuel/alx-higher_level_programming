@@ -66,10 +66,10 @@ class Square(Rectangle):
         Returns: Dictionary of instance
         """
         return {
-            'id': self.id,
             'size': self.__size,
             'x': self.x,
-            'y': self.y
+            'y': self.y,
+            'id': self.id
         }
 
 

@@ -3,6 +3,7 @@
 # pylint: disable=invalid-name, redefined-builtin, too-few-public-methods
 
 import json
+import csv
 
 
 class Base:
@@ -72,3 +73,60 @@ class Base:
             pass
 
         return instances
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        filename = cls.__name__ + ".csv"
+        # data = []
+        # content = ""
+        if list_objs:
+            header_key = list(list_objs[0].to_dictionary().keys())
+            # print(header_key)
+            # print(list_objs)
+            dict_objs = list(map(lambda obj: obj.to_dictionary(), list_objs))
+            # print(dict_objs)
+            with open(filename, 'w') as csv_file:
+                writer = csv.DictWriter(csv_file, fieldnames=header_key)
+                writer.writeheader()
+                return writer.writerows(dict_objs)
+
+                # or
+                # for obj in list_objs:
+                #     dict_obj = obj.to_dictionary()
+                #     csv_row = dict(zip(header_key, dict_obj.values()))
+                #     # print(csv_row)
+                #     writer.writerow(csv_row)
+        return []
+    @classmethod
+    def load_from_file_csv(cls):
+        filename = cls.__name__ + ".csv"
+        instances = []
+        try:
+            with open(filename, 'r') as csv_file:
+                reader = csv.DictReader(csv_file)
+                dict_objs = [line for line in reader]
+                # print(dict_objs)
+            # format the data
+            # print(dict_objs)
+            # no - dict_objs = list(map(lambda obj: (int(val) for val in obj.keys()), dict_objs))
+            # no - print([dict_obj.values() for dict_obj in dict_objs])
+
+            # map values to in, as csv writer rewrote the types
+            for obj in dict_objs:
+                for key, value in obj.items():
+                    try:
+                        obj[key] = int(value)
+                    except ValueError:
+                        obj[key] = float(value)
+                    except TypeError:
+                        pass
+            # print(dict_objs)
+            instances = list(map(lambda obj: cls.create(**obj), dict_objs))
+            # print(instances)
+        except FileNotFoundError:
+            pass
+
+        return instances
+
+
+
