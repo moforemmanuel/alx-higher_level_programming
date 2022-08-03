@@ -8,6 +8,8 @@ if __name__ == "__main__":
     r2 = Rectangle(2, 4)
     Rectangle.save_to_file([r1, r2])
 
+    Rectangle.load_from_file()
+
     # with open("Rectangle.json", "r") as file:
     #     print(file.read())
 
