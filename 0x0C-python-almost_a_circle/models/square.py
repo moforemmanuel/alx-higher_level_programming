@@ -61,6 +61,17 @@ class Square(Rectangle):
             for (name, value) in kwargs.items():
                 setattr(self, name, value)
 
+    def to_dictionary(self):
+        """
+        Returns: Dictionary of instance
+        """
+        return {
+            'id': self.id,
+            'size': self.__size,
+            'x': self.x,
+            'y': self.y
+        }
+
 
 if __name__ == '__main__':
     s = Square(-1)

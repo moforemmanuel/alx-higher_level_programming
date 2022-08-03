@@ -107,7 +107,7 @@ class Rectangle(Base):
         Str repr
         """
         return f'[{self.__class__.__name__}] ({self.id})' \
-               f' {self.__x}/{self.__y} - {self.__width}/{self.__height}'
+               f' {self.x}/{self.y} - {self.width}/{self.height}'
 
     def update(self, *args, **kwargs):
         """
@@ -127,6 +127,18 @@ class Rectangle(Base):
         elif kwargs:
             for (name, value) in kwargs.items():
                 setattr(self, name, value)
+
+    def to_dictionary(self) -> dict:
+        """
+        Returns: Dictionary of instance
+        """
+        return {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
 
 
 if __name__ == "__main__":
