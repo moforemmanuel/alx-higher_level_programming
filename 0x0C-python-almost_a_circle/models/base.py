@@ -40,4 +40,4 @@ class Base:
     def from_json_string(json_string):
         if json_string:
             dict_obj = json.loads(json_string)
-        return dict_obj or ''
+        return dict_obj or []
