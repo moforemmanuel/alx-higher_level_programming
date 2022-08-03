@@ -34,7 +34,7 @@ class Base:
                 data.append(obj.to_dictionary())
         data_str = Base.to_json_string(data)
 
-        with open(fname, 'w') as json_file:
+        with open(fname, 'w', encoding='UTF-8') as json_file:
             return json_file.write(data_str)
 
     @staticmethod
@@ -59,7 +59,7 @@ class Base:
         instances = []
 
         try:
-            with open(filename, 'r') as json_file:
+            with open(filename, 'r', encoding='UTF-8') as json_file:
                 json_string = json_file.read().replace('\n', '')
                 # print(type(json_string)) #str
                 dict_objs = cls.from_json_string(json_string)
@@ -85,7 +85,7 @@ class Base:
             # print(list_objs)
             dict_objs = list(map(lambda obj: obj.to_dictionary(), list_objs))
             # print(dict_objs)
-            with open(filename, 'w') as csv_file:
+            with open(filename, 'w', encoding='UTF-8') as csv_file:
                 writer = csv.DictWriter(csv_file, fieldnames=header_key)
                 writer.writeheader()
                 return writer.writerows(dict_objs)
@@ -97,14 +97,16 @@ class Base:
                 #     # print(csv_row)
                 #     writer.writerow(csv_row)
         return []
+
     @classmethod
     def load_from_file_csv(cls):
         filename = cls.__name__ + ".csv"
         instances = []
         try:
-            with open(filename, 'r') as csv_file:
+            with open(filename, 'r', encoding='UTF-8') as csv_file:
                 reader = csv.DictReader(csv_file)
-                dict_objs = [line for line in reader]
+                # dict_objs = [line for line in reader] better syntax below
+                dict_objs = list(reader)
                 # print(dict_objs)
             # format the data
             # print(dict_objs)
@@ -121,12 +123,9 @@ class Base:
                     except TypeError:
                         pass
             # print(dict_objs)
-            instances = list(map(lambda obj: cls.create(**obj), dict_objs))
+            instances = list(map(lambda ob: cls.create(**ob), dict_objs))
             # print(instances)
         except FileNotFoundError:
             pass
 
         return instances
-
-
-
