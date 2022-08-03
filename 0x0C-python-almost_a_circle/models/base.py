@@ -38,5 +38,6 @@ class Base:
 
     @staticmethod
     def from_json_string(json_string):
-        dict_obj = json.loads(json_string)
-        return dict_obj
+        if json_string:
+            dict_obj = json.loads(json_string)
+        return dict_obj or ''
