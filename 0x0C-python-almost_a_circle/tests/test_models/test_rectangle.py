@@ -15,3 +15,6 @@ class TestRectangle(unittest.TestCase):
         rect2 = Rectangle(2, 1)
         self.assertEqual(rect1.id, 1)
         self.assertEqual(rect2.id, 2)
+
+if __name__ == '__main__':
+    unittest.main()
