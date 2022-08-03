@@ -6,6 +6,7 @@ import json
 import csv
 import turtle
 
+
 class Base:
     """base model"""
     __nb_objects = 0
