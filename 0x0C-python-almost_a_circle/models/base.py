@@ -4,7 +4,7 @@
 
 import json
 import csv
-
+import turtle
 
 class Base:
     """base model"""
@@ -130,3 +130,23 @@ class Base:
             pass
 
         return instances
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        screen = turtle.getscreen()
+        # t = turtle.Turtle()
+
+        pen = turtle.Pen()
+        pen.hideturtle()
+
+        shapes = list_rectangles + list_squares
+        for shape in shapes:
+            pen.up()
+            pen.goto(shape.x, shape.y)
+            pen.down()
+            for i in range(4):
+                pen.fd(shape.width)
+                pen.rt(90)
+
+        screen.exitonclick()
+
