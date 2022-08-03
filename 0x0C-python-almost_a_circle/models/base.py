@@ -50,3 +50,4 @@ class Base:
         elif cls.__name__ == 'Square':
             dummy = cls(2)
         dummy.update(**dictionary)
+        return dummy
