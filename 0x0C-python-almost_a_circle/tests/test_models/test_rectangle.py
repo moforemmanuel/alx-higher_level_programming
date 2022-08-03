@@ -11,10 +11,10 @@ class TestRectangle(unittest.TestCase):
     rect test model
     """
     def test_initialization(self):
-        rect1 = Rectangle(2, 3)
-        rect2 = Rectangle(2, 1)
-        self.assertEqual(rect1.id, 1)
-        self.assertEqual(rect2.id, 2)
+        r1 = Rectangle(2,5)
+        self.assertEqual(r1.id, Rectangle._Base__nb_objects)
+        r2 = Rectangle(1,2)
+        self.assertEqual(r2.id, Rectangle._Base__nb_objects)
 
 if __name__ == '__main__':
     unittest.main()
