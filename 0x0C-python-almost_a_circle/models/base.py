@@ -35,3 +35,8 @@ class Base:
 
         with open(fname, 'w') as json_file:
             return json_file.write(data_str)
+
+    @staticmethod
+    def from_json_string(json_string):
+        dict_obj = json.loads(json_string)
+        return dict_obj
