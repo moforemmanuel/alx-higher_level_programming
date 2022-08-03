@@ -18,7 +18,12 @@ class TestRectangle(unittest.TestCase):
         r3 = Rectangle(1, 2, 3, 4)
         self.assertEqual(r3.id, Rectangle._Base__nb_objects)
         r4 = Rectangle("1", 2)
-        self.assertRaises(TypeError)
+        self.assertRaises(Rectangle(1, "2"), TypeError)
+        self.assertRaises(Rectangle("1", 2), TypeError)
+        self.assertRaises(Rectangle(1, 2, "3"), TypeError)
+        self.assertRaises(Rectangle(1, 2, 3, "4"), TypeError)
+        self.assertEqual(Rectangle(1, 2, 3, 4, 4), Rectangle._Base__nb_objects)
+        self.assertRaises(Rectangle(-1, 2), ValueError)
 
 if __name__ == '__main__':
     unittest.main()
