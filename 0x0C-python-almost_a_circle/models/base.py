@@ -110,7 +110,8 @@ class Base:
                 # print(dict_objs)
             # format the data
             # print(dict_objs)
-            # no - dict_objs = list(map(lambda obj: (int(val) for val in obj.keys()), dict_objs))
+            # no - dict_objs = list(map(lambda obj: (int(val) for val in\
+            # obj.keys()), dict_objs))
             # no - print([dict_obj.values() for dict_obj in dict_objs])
 
             # map values to in, as csv writer rewrote the types
