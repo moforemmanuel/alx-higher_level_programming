@@ -1,3 +1,3 @@
 #!/bin/bash
 #
-echo "$(cat $($2))"
+curl -s -o dev/null
