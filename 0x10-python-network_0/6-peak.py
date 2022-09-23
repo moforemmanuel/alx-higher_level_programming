@@ -1,5 +1,10 @@
 #!/usr/bin/python3
 
+"""
+Function to find peak in an array of integers
+"""
+
+
 def find_peak(array: list) -> int:
     """
     Find peak of an array
@@ -13,11 +18,3 @@ def find_peak(array: list) -> int:
         # if array.index(peak) == 0:
         #     peak = max(array[1:])
     return peak
-
-
-print(find_peak([1, 2, 4, 6, 3]))
-print(find_peak([4, 2, 1, 2, 3, 1]))
-print(find_peak([2, 2, 2]))
-print(find_peak([]))
-print(find_peak([-2, -4, 2, 1]))
-print(find_peak([4, 2, 1, 2, 2, 2, 3, 1]))
