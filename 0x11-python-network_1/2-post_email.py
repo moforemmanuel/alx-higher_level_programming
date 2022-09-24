@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-
 """
-post email
+Take in a URL and email, send POST request, and display body of response
+decoded in utf-8
 """
-
-from urllib import request, parse
 import sys
+from urllib import request, parse
 
 if __name__ == "__main__":
     values = {'email': sys.argv[2]}
