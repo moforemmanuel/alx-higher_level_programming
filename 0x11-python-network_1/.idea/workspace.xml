@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="eba52dd7-305b-4658-aa94-31f3fde14707" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/.idea/0x10-python-network_0.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/0-body_size.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/0-body_size.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/1-body.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/1-body.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/100-status_code.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/100-status_code.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/101-post_json.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/102-catch_me.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/2-delete.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/2-delete.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/3-methods.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/3-methods.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/4-header.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/4-header.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/5-post_params.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/5-post_params.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/6-peak.py" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/6-peak.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/6-peak.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/6-peak.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/base.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/10-my_github.py" beforeDir="false" afterPath="$PROJECT_DIR$/10-my_github.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FC9UTzHM3z4uhH0DLnDHVWnFFC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/home/manuel/Desktop/ALX/alx-higher_level_programming/0x11-python-network_1",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.10-my_github">
+    <configuration name="0-hbtn_status" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="0x11-python-network_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/0-hbtn_status.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="1-hbtn_header" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="0x11-python-network_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/1-hbtn_header.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="10-my_github" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="0x11-python-network_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/10-my_github.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="0x11-python-network_1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.10-my_github" />
+        <item itemvalue="Python.1-hbtn_header" />
+        <item itemvalue="Python.0-hbtn_status" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eba52dd7-305b-4658-aa94-31f3fde14707" name="Changes" comment="" />
+      <created>1663985217059</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663985217059</updated>
+      <workItem from="1663985218747" duration="2696000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/0x11_python_network_1$0_hbtn_status.coverage" NAME="0-hbtn_status Coverage Results" MODIFIED="1663985969335" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/0x11_python_network_1$10_my_github.coverage" NAME="10-my_github Coverage Results" MODIFIED="1663987696173" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/0x11_python_network_1$1_hbtn_header.coverage" NAME="1-hbtn_header Coverage Results" MODIFIED="1663986309656" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>
