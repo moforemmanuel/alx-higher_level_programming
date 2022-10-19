@@ -1,8 +1,6 @@
 #!/usr/bin/node
 
-const fs = require('fs');
 const request = require('request');
-const { resourceLimits } = require('worker_threads');
 const argv = process.argv.slice(2);
 
 request.get(argv[0], (error, response, body) => {
