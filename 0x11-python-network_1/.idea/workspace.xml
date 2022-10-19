@@ -25,7 +25,7 @@
       <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/6-peak.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/6-peak.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../0x10-python-network_0/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../0x10-python-network_0/base.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/10-my_github.py" beforeDir="false" afterPath="$PROJECT_DIR$/10-my_github.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/manuel/Desktop/ALX/alx-higher_level_programming/0x11-python-network_1",
+    "last_opened_file_path": "/home/manuel/Desktop/ALX/AirBnB_clone_v2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -168,7 +168,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663985217059</updated>
-      <workItem from="1663985218747" duration="2696000" />
+      <workItem from="1663985218747" duration="3516000" />
+      <workItem from="1664355728994" duration="83000" />
     </task>
     <servers />
   </component>
