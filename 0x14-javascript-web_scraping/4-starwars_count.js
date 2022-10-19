@@ -9,13 +9,15 @@ request.get(argv[0], (error, response, body) => {
     return;
   }
   // console.log(response.body);
-  const count = JSON.parse(body).results.reduce((acc, movie) => {
-    // console.log(movie.characters);
-    if (movie.characters.includes('https://swapi-api.hbtn.io/api/people/18/')) {
-      return acc + 1;
-    }
-    return acc;
-  }, 0);
-
-  console.log(count);
+  console.log(
+    JSON.parse(body).results.reduce((acc, movie) => {
+      // console.log(movie.characters);
+      if (
+        movie.characters.includes('https://swapi-api.hbtn.io/api/people/18/')
+      ) {
+        return acc + 1;
+      }
+      return acc;
+    }, 0)
+  );
 });
